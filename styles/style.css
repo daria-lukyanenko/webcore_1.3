@@ -1,33 +1,33 @@
 @font-face {
   font-family: "TT Lakes";
-  src: url(./fonts/TTLakes-Bold/TTLakes-Bold.eot) format("eot"),
-    url(./fonts/TTLakes-Bold/TTLakes-Bold.ttf) format("ttf"),
-    url(./fonts/TTLakes-Bold/TTLakes-Bold.woff) format("woff");
+  src: url(../fonts/TTLakes-Bold/TTLakes-Bold.eot) format("eot"),
+    url(../fonts/TTLakes-Bold/TTLakes-Bold.ttf) format("ttf"),
+    url(../fonts/TTLakes-Bold/TTLakes-Bold.woff) format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TT Lakes";
-  src: url(./fonts/TTLakes-Medium/TTLakes-Medium.eot) format("eot"),
-    url(./fonts/TTLakes-Medium/TTLakes-Medium.ttf) format("ttf"),
-    url(./fonts/TTLakes-Medium/TTLakes-Medium.woff) format("woff");
+  src: url(../fonts/TTLakes-Medium/TTLakes-Medium.eot) format("eot"),
+    url(../fonts/TTLakes-Medium/TTLakes-Medium.ttf) format("ttf"),
+    url(../fonts/TTLakes-Medium/TTLakes-Medium.woff) format("woff");
   font-weight: medium;
   font-style: normal;
 }
 
 @font-face {
   font-family: "TT Lakes";
-  src: url(./fonts/TTLakes-Regular/TTLakes-Regular.eot) format("eot"),
-    url(./fonts/TTLakes-Regular/TTLakes-Regular.ttf) format("ttf"),
-    url(./fonts/TTLakes-Regular/TTLakes-Regular.woff) format("woff");
+  src: url(../fonts/TTLakes-Regular/TTLakes-Regular.eot) format("eot"),
+    url(../fonts/TTLakes-Regular/TTLakes-Regular.ttf) format("ttf"),
+    url(../fonts/TTLakes-Regular/TTLakes-Regular.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
   --border: #d9fff5;
-  --background: #f8f8f8;
+  --background: #ffffff;
   --active: #b8ffec;
   --text: #1b1c21;
   --menu: #7e7e82;
@@ -82,11 +82,23 @@ a {
   }
 
   .menu-for-mobile {
-    display: flex;
-    justify-content: space-around;
     background-color: #ffffff;
     padding: 15px;
   }
+
+  .mobile-menu-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+}
+
+.button-list {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .about-services {
@@ -175,7 +187,7 @@ a {
   margin-top: 10px;
 }
 
-@media (min-width: 768px) and (max-width: 1120px) {
+@media (min-width: 768px) and (max-width: 1366px) {
   .menu-for-mobile {
     display: none;
   }
@@ -189,6 +201,7 @@ a {
 
   .menu-for-tablet {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     background-color: #ffffff;
     padding: 15px;
@@ -202,16 +215,26 @@ a {
     gap: 20px;
   }
 
+  .tablet-menu-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: auto;
+    list-style-type: none;
+  }
+
   .wrapper-for-tablet-list {
     margin-left: auto;
   }
 
-  .icon-list {
+  .tablet-icon-list {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 20px;
     list-style-type: none;
+    margin-left: auto;
   }
 
   .about-company-tablet {
@@ -240,7 +263,7 @@ a {
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1366px) {
   .menu-for-mobile {
     display: none;
   }

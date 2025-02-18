@@ -10,32 +10,84 @@
   <body>
     <header class="header header-for-desktop">
       <nav class="menu-for-mobile">
-        <img src="images/burger.svg" alt="Иконка 'Меню'" />
-        <img src="images/logo.svg" alt="Логотип 'CPS'" />
-        <img src="images/divider.svg" alt="Разделитель" />
-        <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
-        <img src="images/checkstatus.svg" alt="Иконка 'Просмотр статуса'" />
-      </nav>
-      <nav class="menu-for-tablet">
-        <div class="wrapper-for-tablet-menu">
-          <img src="images/burger.svg" alt="Иконка 'Меню'" />
-          <img src="images/divider.svg" alt="Разделитель" />
-          <img src="images/logo.svg" alt="Логотип 'CPS'" />
-        </div>
-        <div class="wrapper-for-tablet-list">
-          <ul class="icon-list">
-            <li>
-              <img src="images/call.svg" alt="Иконка 'Телефонная трубка'" />
-            </li>
-            <li><img src="images/chat.svg" alt="Иконка 'Чат'" /></li>
-            <li><img src="images/profile.svg" alt="Иконка 'Профиль'" /></li>
-            <li><img src="images/divider.svg" alt="Разделитель" /></li>
-            <li><img src="images/repair.svg" alt="Иконка 'Ремонт'" /></li>
-            <li>
+        <ul class="mobile-menu-list">
+          <li>
+            <button class="button-list">
+              <img src="images/burger.svg" alt="Иконка 'Меню'" />
+            </button>
+          </li>
+          <li>
+            <button class="button-list">
+              <img src="images/logo.svg" alt="Логотип 'CPS'" />
+            </button>
+          </li>
+          <li><img src="images/divider.svg" alt="Разделитель" /></li>
+          <li>
+            <button class="button-list">
+              <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
+            </button>
+          </li>
+          <li>
+            <button class="button-list">
               <img
                 src="images/checkstatus.svg"
                 alt="Иконка 'Просмотр статуса'"
               />
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <nav class="menu-for-tablet">
+        <div class="wrapper-for-tablet-menu">
+          <ul class="tablet-menu-list">
+            <li>
+              <button class="button-list">
+                <img src="images/burger.svg" alt="Иконка 'Меню'" />
+              </button>
+            </li>
+            <img src="images/divider.svg" alt="Разделитель" />
+            <li>
+              <button class="button-list">
+                <img src="images/logo.svg" alt="Логотип 'CPS'" />
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="wrapper-for-tablet-list">
+          <ul class="tablet-icon-list">
+            <li>
+              <button class="button-list">
+                <img src="images/call.svg" alt="Иконка 'Телефонная трубка'" />
+              </button>
+            </li>
+
+            <li>
+              <button class="button-list">
+                <img src="images/chat.svg" alt="Иконка 'Чат'" />
+              </button>
+            </li>
+
+            <li>
+              <button class="button-list">
+                <img src="images/profile.svg" alt="Иконка 'Профиль'" />
+              </button>
+            </li>
+
+            <li><img src="images/divider.svg" alt="Разделитель" /></li>
+
+            <li>
+              <button class="button-list">
+                <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
+              </button>
+            </li>
+
+            <li>
+              <button class="button-list">
+                <img
+                  src="images/checkstatus.svg"
+                  alt="Иконка 'Просмотр статуса'"
+                />
+              </button>
             </li>
           </ul>
         </div>
@@ -52,11 +104,18 @@
         <div class="wrapper-for-desktop-list">
           <div class="repair-request">
             <p class="repair-request__text">Оставить заявку</p>
-            <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
+            <button class="button-list">
+              <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
+            </button>
           </div>
           <div class="check-status">
             <p class="check-status__text">Статус ремонта</p>
-            <img src="images/checkstatus.svg" alt="Иконка 'Просмотр статуса'" />
+            <button class="button-list">
+              <img
+                src="images/checkstatus.svg"
+                alt="Иконка 'Просмотр статуса'"
+              />
+            </button>
           </div>
         </div>
       </nav>
