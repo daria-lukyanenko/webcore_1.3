@@ -1,9 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normolize.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header header-for-desktop">
+      <nav class="menu-for-mobile">
+        <img src="images/burger.svg" alt="Иконка 'Меню'" />
+        <img src="images/logo.svg" alt="Логотип 'CPS'" />
+        <img src="images/divider.svg" alt="Разделитель" />
+        <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
+        <img src="images/checkstatus.svg" alt="Иконка 'Просмотр статуса'" />
+      </nav>
+      <nav class="menu-for-tablet">
+        <div class="wrapper-for-tablet-menu">
+          <img src="images/burger.svg" alt="Иконка 'Меню'" />
+          <img src="images/divider.svg" alt="Разделитель" />
+          <img src="images/logo.svg" alt="Логотип 'CPS'" />
+        </div>
+        <div class="wrapper-for-tablet-list">
+          <ul class="icon-list">
+            <li>
+              <img src="images/call.svg" alt="Иконка 'Телефонная трубка'" />
+            </li>
+            <li><img src="images/chat.svg" alt="Иконка 'Чат'" /></li>
+            <li><img src="images/profile.svg" alt="Иконка 'Профиль'" /></li>
+            <li><img src="images/divider.svg" alt="Разделитель" /></li>
+            <li><img src="images/repair.svg" alt="Иконка 'Ремонт'" /></li>
+            <li>
+              <img
+                src="images/checkstatus.svg"
+                alt="Иконка 'Просмотр статуса'"
+              />
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="menu-for-desktop">
+        <div class="wrapper-for-desktop-menu">
+          <img
+            class="wrapper-for-desktop-menu__icon"
+            src="images/highlight.svg"
+            alt=""
+          />
+          <h2 class="wrapper-for-desktop-menu__title">Услуги и сервисы</h2>
+        </div>
+        <div class="wrapper-for-desktop-list">
+          <div class="repair-request">
+            <p class="repair-request__text">Оставить заявку</p>
+            <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
+          </div>
+          <div class="check-status">
+            <p class="check-status__text">Статус ремонта</p>
+            <img src="images/checkstatus.svg" alt="Иконка 'Просмотр статуса'" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="about-services">
+        <img class="about-services__icon" src="images/highlight.svg" alt="" />
+        <h1 class="title">Услуги и сервисы</h1>
+      </section>
+      <nav>
+        <div class="services-list services-list-for-desktop">
+          <a href="" class="services-list__link">Ремонтируемые бренды</a>
+          <a href="" class="services-list__link">Ремонтируемые устройства</a>
+          <a href="" class="services-list__link">Дополнительные услуги</a>
+          <a href="" class="services-list__link">Цены на услуги</a>
+          <a href="" class="services-list__link">Адреса сервисных центров</a>
+          <a href="" class="services-list__link">Отзывы</a>
+        </div>
+      </nav>
+      <section class="about-company about-company-tablet about-company-desktop">
+        <div class="info-about-company">
+          <p class="info-about-company__text">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </p>
+
+          <p class="info-about-company__text text-for-tablet">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера
+          </p>
+
+          <p class="text-for-desktop">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+          </p>
+          <div class="wrapper">
+            <img
+              class="wrapper__icon"
+              src="images/icon.svg"
+              alt="Двойная стрелка вниз"
+            />
+            <a class="wrapper__link" href="" class="">Читать далее</a>
+          </div>
+        </div>
+        <img
+          class="info-about-company__img about-company-tablet__img about-company-desktop__img"
+          src="images/cpc_img.jpg"
+          alt=""
+        />
+      </section>
+    </main>
+  </body>
 </html>
