@@ -31,8 +31,13 @@
   --active: #b8ffec;
   --text: #1b1c21;
   --menu: #7e7e82;
+  --devider: #eaeaea;
 
   --tr: 0.2s;
+}
+
+a {
+  text-decoration: none;
 }
 
 html {
@@ -49,56 +54,68 @@ html {
 }
 
 body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
   font-family: "TT Lakes";
   background-color: var(--background);
 }
 
-a {
-  text-decoration: none;
+.container {
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header {
   border-bottom: 1px solid var(--border);
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .menu-for-tablet {
-    display: none;
-  }
-
-  .menu-for-desktop {
-    display: none;
-  }
-
-  .text-for-tablet {
-    display: none;
-  }
-
-  .text-for-desktop {
-    display: none;
-  }
-
-  .menu-for-mobile {
-    background-color: #ffffff;
-    padding: 15px;
-  }
-
-  .mobile-menu-list {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-around;
-    list-style-type: none;
-  }
+.menu-for-tablet,
+.menu-for-desktop {
+  display: none;
 }
 
-.button-list {
+.text-for-tablet,
+.text-for-desktop {
+  display: none;
+}
+
+.menu-for-mobile {
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.mobile-menu-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.button__devider {
+  position: relative;
+  padding-right: 10pх;
+}
+
+.button__devider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 53px;
+  transform: translateY(-50%);
+  display: block;
+  height: 30px;
+  width: 2px;
+  border-radius: 6px;
+  background-color: var(--devider);
 }
 
 .about-services {
@@ -122,6 +139,7 @@ a {
 }
 
 .services-list {
+  list-style-type: none;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -129,6 +147,8 @@ a {
   overflow-x: auto;
   overflow-y: hidden;
   scrollbar-width: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .services-list__link {
@@ -143,7 +163,7 @@ a {
   white-space: nowrap;
 }
 
-.services-list__link:hover {
+.services-list__link_active {
   text-align: center;
   background-color: #ffffff;
   border-radius: 6px;
@@ -173,7 +193,7 @@ a {
   height: 10.29px;
 }
 
-.wrapper__link {
+.wrapper__text {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -185,195 +205,4 @@ a {
   width: 100%;
   background-size: cover;
   margin-top: 10px;
-}
-
-@media (min-width: 768px) and (max-width: 1366px) {
-  .menu-for-mobile {
-    display: none;
-  }
-  .menu-for-desktop {
-    display: none;
-  }
-
-  .text-for-desktop {
-    display: none;
-  }
-
-  .menu-for-tablet {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #ffffff;
-    padding: 15px;
-  }
-
-  .wrapper-for-tablet-menu {
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
-  }
-
-  .tablet-menu-list {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-around;
-    margin-right: auto;
-    list-style-type: none;
-  }
-
-  .wrapper-for-tablet-list {
-    margin-left: auto;
-  }
-
-  .tablet-icon-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
-    list-style-type: none;
-    margin-left: auto;
-  }
-
-  .about-company-tablet {
-    display: flex;
-  }
-
-  .info-about-company {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .text-for-tablet {
-    margin-top: 0;
-    display: block;
-  }
-
-  .about-company-tablet {
-    height: 208px;
-  }
-
-  .about-company-tablet__img {
-    width: 360px;
-    height: 208px;
-    border-radius: 6px;
-  }
-}
-
-@media (min-width: 1366px) {
-  .menu-for-mobile {
-    display: none;
-  }
-  .menu-for-tablet {
-    display: none;
-  }
-
-  .header-for-desktop {
-    border-bottom: none;
-    padding-top: 20px;
-  }
-
-  .title {
-    display: none;
-  }
-
-  .about-services__icon {
-    display: none;
-  }
-
-  .text-for-tablet {
-    display: none;
-  }
-
-  .menu-for-desktop {
-    display: flex;
-    background-color: var(--background);
-    padding: 15px 15px 15px 0;
-    align-items: center;
-  }
-
-  .wrapper-for-desktop-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  .wrapper-for-desktop-menu__icon {
-    width: 4px;
-    height: 40px;
-  }
-
-  .wrapper-for-desktop-menu__title {
-    width: 304px;
-    height: 40px;
-    color: var(--text);
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: -0.6px;
-  }
-
-  .wrapper-for-desktop-list {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    gap: 20px;
-  }
-
-  .repair-request {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .repair-request__text {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: var(--text);
-  }
-
-  .check-status {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .check-status__text {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: var(--text);
-  }
-
-  .services-list-for-desktop {
-    margin-top: 20px;
-    justify-content: space-around;
-  }
-
-  .services-list-for-desktop:last-of-type {
-    margin-right: 20px;
-  }
-
-  .about-company-desktop {
-    display: flex;
-    gap: 20px;
-    padding: 15px;
-  }
-
-  .text-for-desktop {
-    display: block;
-    font-size: 14px;
-    line-height: 18px;
-    color: var(--text);
-    letter-spacing: 0.2px;
-    padding: 10px;
-  }
-
-  .about-company-desktop__img {
-    width: 531.35px;
-    height: 307px;
-  }
 }
