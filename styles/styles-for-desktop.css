@@ -1,55 +1,13 @@
 @media (min-width: 1366px) {
-  .menu-for-mobile,
-  .menu-for-tablet {
+  .wrapper-for-menu {
     display: none;
-  }
-
-  .header-for-desktop {
-    border-bottom: none;
-    padding-top: 20px;
-  }
-
-  .logo::after {
-    display: none;
-  }
-
-  .about-services__icon,
-  .title,
-  .text-for-tablet {
-    display: none;
-  }
-
-  .menu-for-desktop {
-    display: flex;
-    background-color: var(--background);
-    padding: 15px 15px 15px 0;
-    align-items: center;
-  }
-
-  .wrapper-for-desktop-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-  }
-  .wrapper-for-desktop-menu__icon {
-    width: 4px;
-    height: 40px;
-  }
-
-  .wrapper-for-desktop-menu__title {
-    width: 304px;
-    height: 40px;
-    color: var(--text);
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: -0.6px;
   }
 
   .wrapper-for-desktop-list {
     display: flex;
     align-items: center;
     margin-left: auto;
+    margin-right: 20px;
     gap: 20px;
   }
 
@@ -67,10 +25,6 @@
     color: var(--text);
   }
 
-  .navbar {
-    display: flex;
-  }
-
   .services-list {
     flex-wrap: wrap;
     overflow-x: hidden;
@@ -81,27 +35,34 @@
   }
 
   .about-company {
-    margin-top: 0;
+    margin-top: 20px;
   }
 
   .about-company-desktop {
     display: flex;
-    gap: 20px;
+    margin-top: 20px;
+    gap: 40px;
     padding: 10px;
   }
 
-  .text-for-desktop {
+  .info-about-company__text {
     display: block;
-    font-size: 14px;
-    line-height: 18px;
-    color: var(--text);
-    letter-spacing: 0.2px;
-    padding: 10px;
+  }
+  .additional-text {
+    display: block;
+  }
+  .additional-text {
+    display: block;
+    overflow: visible;
+  }
+
+  .wrapper-for-desktop-button {
+    margin-top: 10px;
   }
 
   .about-company-desktop__img {
     width: 531.35px;
     height: 307px;
-    margin: 0;
+    margin: 0px;
   }
 }

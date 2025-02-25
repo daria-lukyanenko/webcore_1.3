@@ -27,7 +27,7 @@
 
 :root {
   --border: #d9fff5;
-  --background: #ffffff;
+  --background: #f8f8f8;
   --active: #b8ffec;
   --text: #1b1c21;
   --menu: #7e7e82;
@@ -68,22 +68,20 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
-.menu-for-tablet,
-.menu-for-desktop {
+.tablet-icon-list {
   display: none;
 }
 
-.text-for-tablet,
-.text-for-desktop {
+.wrapper-for-desktop-list {
   display: none;
 }
 
-.menu-for-mobile {
+.wrapper-for-menu {
   background-color: #ffffff;
   padding: 15px;
 }
 
-.mobile-menu-list {
+.menu-list {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -176,28 +174,34 @@ body {
 }
 
 .about-company {
-  margin-top: 20px;
-}
-
-.info-about-company__text {
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--text);
-  letter-spacing: 0.2px;
+  margin: 20px 10px 0 0;
   padding: 10px;
 }
 
-.wrapper {
-  margin-top: 10px;
+.info-about-company {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-about-company__text {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text);
+  letter-spacing: 0.2px;
+}
+
+.wrapper-for-button {
   margin-left: 20px;
 }
 
-.wrapper__icon {
+.wrapper-for-button__icon {
   width: 7.41px;
   height: 10.29px;
 }
 
-.wrapper__text {
+.wrapper-for-button__text {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -209,4 +213,7 @@ body {
   width: 100%;
   background-size: cover;
   margin-top: 10px;
+}
+.additional-text {
+  display: none;
 }

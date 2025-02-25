@@ -11,41 +11,13 @@
   </head>
   <body>
     <div class="container">
-      <header class="header header-for-desktop">
-        <div class="menu-for-mobile">
-          <div class="mobile-menu-list">
-            <button class="button">
+      <header class="header">
+        <div class="wrapper-for-menu">
+          <div class="menu-list">
+            <button class="button devider">
               <img src="images/burger.svg" alt="Иконка 'Меню'" />
             </button>
             <img src="images/logo.svg" alt="Логотип 'CPS'" />
-            <button class="button button__devider">
-              <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
-            </button>
-            <button class="button">
-              <img
-                src="images/checkstatus.svg"
-                alt="Иконка 'Просмотр статуса'"
-              />
-            </button>
-          </div>
-        </div>
-        <!-- Menu for @media(min-width:768px) and (max-width: 1336px)-->
-        <div class="menu-for-tablet">
-          <div class="wrapper-for-tablet-menu">
-            <ul class="tablet-menu-list">
-              <li>
-                <button class="button">
-                  <img src="images/burger.svg" alt="Иконка 'Меню'" />
-                </button>
-              </li>
-              <li>
-                <div class="logo">
-                  <img src="images/logo.svg" alt="Логотип 'CPS'" />
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="wrapper-for-tablet-list">
             <ul class="tablet-icon-list">
               <li>
                 <button class="button">
@@ -62,48 +34,16 @@
                   <img src="images/profile.svg" alt="Иконка 'Профиль'" />
                 </button>
               </li>
-              <li>
-                <button class="button button__devider">
-                  <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
-                </button>
-              </li>
-              <li>
-                <button class="button">
-                  <img
-                    src="images/checkstatus.svg"
-                    alt="Иконка 'Просмотр статуса'"
-                  />
-                </button>
-              </li>
             </ul>
-          </div>
-        </div>
-        <!-- Menu for @media(min-width:1336px)-->
-        <div class="menu-for-desktop">
-          <div class="wrapper-for-desktop-menu">
-            <img
-              class="wrapper-for-desktop-menu__icon"
-              src="images/highlight.svg"
-              alt=""
-            />
-            <h2 class="wrapper-for-desktop-menu__title">Услуги и сервисы</h2>
-          </div>
-          <div class="wrapper-for-desktop-list">
-            <div class="repair-request">
-              <button class="button">
-                <p class="button__text">Оставить заявку</p>
-                <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
-              </button>
-            </div>
-            <div class="check-status">
-              <button class="button">
-                <p class="button__text">Статус ремонта</p>
-                <img
-                  src="images/checkstatus.svg"
-                  alt="Иконка 'Просмотр статуса'"
-                />
-              </button>
-            </div>
+            <button class="button button__devider">
+              <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
+            </button>
+            <button class="button">
+              <img
+                src="images/checkstatus.svg"
+                alt="Иконка 'Просмотр статуса'"
+              />
+            </button>
           </div>
         </div>
       </header>
@@ -116,8 +56,25 @@
               alt=""
             />
             <h1 class="title">Услуги и сервисы</h1>
+            <div class="wrapper-for-desktop-list">
+              <div class="repair-request">
+                <button class="button">
+                  <p class="button__text">Оставить заявку</p>
+                  <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
+                </button>
+              </div>
+              <div class="check-status">
+                <button class="button">
+                  <p class="button__text">Статус ремонта</p>
+                  <img
+                    src="images/checkstatus.svg"
+                    alt="Иконка 'Просмотр статуса'"
+                  />
+                </button>
+              </div>
+            </div>
           </div>
-          <nav class="navbar">
+          <nav>
             <ul class="services-list services-list-for-desktop">
               <li>
                 <a
@@ -158,25 +115,20 @@
               официальной гарантией производителя.
             </p>
 
-            <p class="info-about-company__text text-for-tablet">
-              Мы успешно работаем с 1992 года и заслужили репутацию надежного
-              партнера
-            </p>
-            <!-- Text for @media(min-width:1336px)-->
-            <p class="text-for-desktop">
+            <p class="info-about-company__text additional-text">
               Мы успешно работаем с 1992 года и заслужили репутацию надежного
               партнера, что подтверждает большое количество постоянных клиентов.
               Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
               очередь, советуют нас родным и близким.
             </p>
-            <div class="wrapper">
+            <div class="wrapper-for-button wrapper-for-desktop-button">
               <button class="button">
                 <img
-                  class="wrapper__icon"
+                  class="wrapper-for-button__icon"
                   src="images/icon.svg"
                   alt="Двойная стрелка вниз"
                 />
-                <p class="wrapper__text" href="" class="">Читать далее</p>
+                <p class="wrapper-for-button__text" href="">Читать далее</p>
               </button>
             </div>
           </div>
