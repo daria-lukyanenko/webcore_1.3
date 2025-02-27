@@ -68,7 +68,7 @@ body {
 .header {
   border-bottom: 1px solid var(--border);
   background-color: #ffffff;
-  padding: 15px;
+  padding: 16px;
   display: flex;
   gap: 20px;
   align-items: center;
