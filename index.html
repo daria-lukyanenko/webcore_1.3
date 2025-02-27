@@ -5,65 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/normolize.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/styles-for-tablet.css" />
-    <link rel="stylesheet" href="styles/styles-for-desktop.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <div class="wrapper-for-menu">
-          <div class="menu-list">
-            <button class="button devider">
-              <img src="images/burger.svg" alt="Иконка 'Меню'" />
+        <button class="button devider">
+          <img src="images/burger.svg" alt="Иконка 'Меню'" />
+        </button>
+        <img src="images/logo.svg" alt="Логотип 'CPS'" />
+        <ul class="tablet-menu-list">
+          <li>
+            <button class="button">
+              <img src="images/call.svg" alt="Иконка 'Телефонная трубка'" />
             </button>
-            <img src="images/logo.svg" alt="Логотип 'CPS'" />
-            <ul class="tablet-icon-list">
-              <li>
-                <button class="button">
-                  <img src="images/call.svg" alt="Иконка 'Телефонная трубка'" />
-                </button>
-              </li>
-              <li>
-                <button class="button">
-                  <img src="images/chat.svg" alt="Иконка 'Чат'" />
-                </button>
-              </li>
-              <li>
-                <button class="button">
-                  <img src="images/profile.svg" alt="Иконка 'Профиль'" />
-                </button>
-              </li>
-            </ul>
+          </li>
+          <li>
+            <button class="button">
+              <img src="images/chat.svg" alt="Иконка 'Чат'" />
+            </button>
+          </li>
+          <li>
+            <button class="button">
+              <img src="images/profile.svg" alt="Иконка 'Профиль'" />
+            </button>
+          </li>
+        </ul>
+        <ul class="menu-list">
+          <li>
             <button class="button button__devider">
               <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
             </button>
+          </li>
+          <li>
             <button class="button">
               <img
                 src="images/checkstatus.svg"
                 alt="Иконка 'Просмотр статуса'"
               />
             </button>
-          </div>
-        </div>
+          </li>
+        </ul>
       </header>
       <main>
-        <section>
+        <nav class="page-nav">
           <div class="about-services">
-            <img
-              class="about-services__icon"
-              src="images/highlight.svg"
-              alt=""
-            />
             <h1 class="title">Услуги и сервисы</h1>
-            <div class="wrapper-for-desktop-list">
-              <div class="repair-request">
+            <ul class="desktop-icon-list">
+              <li class="desktop-icon-list__item">
                 <button class="button">
                   <p class="button__text">Оставить заявку</p>
                   <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
                 </button>
-              </div>
-              <div class="check-status">
+              </li>
+              <li class="desktop-icon-list__item">
                 <button class="button">
                   <p class="button__text">Статус ремонта</p>
                   <img
@@ -71,72 +66,59 @@
                     alt="Иконка 'Просмотр статуса'"
                   />
                 </button>
-              </div>
-            </div>
-          </div>
-          <nav>
-            <ul class="services-list services-list-for-desktop">
-              <li>
-                <a
-                  href=""
-                  class="services-list__link services-list__link_active"
-                  >Ремонтируемые бренды</a
-                >
-              </li>
-              <li>
-                <a href="" class="services-list__link"
-                  >Ремонтируемые устройства</a
-                >
-              </li>
-              <li>
-                <a href="" class="services-list__link">Дополнительные услуги</a>
-              </li>
-              <li>
-                <a href="" class="services-list__link">Цены на услуги</a>
-              </li>
-              <li>
-                <a href="" class="services-list__link"
-                  >Адреса сервисных центров</a
-                >
-              </li>
-              <li>
-                <a href="" class="services-list__link">Отзывы</a>
               </li>
             </ul>
-          </nav>
-        </section>
-        <section
-          class="about-company about-company-tablet about-company-desktop"
-        >
+          </div>
+          <ul class="services-list">
+            <li>
+              <a href="" class="services-list__link services-list__link--active"
+                >Ремонтируемые бренды</a
+              >
+            </li>
+            <li>
+              <a href="" class="services-list__link"
+                >Ремонтируемые устройства</a
+              >
+            </li>
+            <li>
+              <a href="" class="services-list__link">Дополнительные услуги</a>
+            </li>
+            <li>
+              <a href="" class="services-list__link">Цены на услуги</a>
+            </li>
+            <li>
+              <a href="" class="services-list__link"
+                >Адреса сервисных центров</a
+              >
+            </li>
+            <li>
+              <a href="" class="services-list__link">Отзывы</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="about-company">
           <div class="info-about-company">
             <p class="info-about-company__text">
               Мы являемся авторизованным сервисным центром по ремонту техники
               Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
               официальной гарантией производителя.
             </p>
-
-            <p class="info-about-company__text additional-text">
+            <p class="additional-text">
               Мы успешно работаем с 1992 года и заслужили репутацию надежного
               партнера, что подтверждает большое количество постоянных клиентов.
               Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
               очередь, советуют нас родным и близким.
             </p>
-            <div class="wrapper-for-button wrapper-for-desktop-button">
-              <button class="button">
-                <img
-                  class="wrapper-for-button__icon"
-                  src="images/icon.svg"
-                  alt="Двойная стрелка вниз"
-                />
-                <p class="wrapper-for-button__text" href="">Читать далее</p>
-              </button>
-            </div>
+            <button class="button">
+              <img
+                class="button__icon"
+                src="images/icon.svg"
+                alt="Двойная стрелка вниз"
+              />
+              <p class="button__text" href="">Читать далее</p>
+            </button>
           </div>
-          <img
-            class="info-about-company__img about-company-tablet__img about-company-desktop__img"
-            src="images/cpc_img.jpg"
-            alt=""
-          />
+          <img class="about-company__img" src="images/cpc_img.jpg" alt="" />
         </section>
       </main>
     </div>
