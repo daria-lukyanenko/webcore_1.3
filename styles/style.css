@@ -199,13 +199,13 @@ body {
   margin: 15px;
 }
 
-.info-about-company {
+.about-company__info {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.info-about-company__text {
+.about-company__text {
   display: block;
   font-size: 14px;
   line-height: 20px;
@@ -221,6 +221,7 @@ body {
   margin-left: 20px;
   transition: transform 0.3s ease;
 }
+
 .button__icon:hover {
   color: var(--highlight);
   filter: brightness(1.2);
@@ -237,6 +238,7 @@ body {
 
 .button__text:hover {
   font-weight: bold;
+  color: black;
 }
 
 .about-company__img {
@@ -244,7 +246,7 @@ body {
   background-size: cover;
   margin-top: 10px;
 }
-.additional-text {
+.about-company__text--hidden {
   display: none;
 }
 
@@ -304,7 +306,7 @@ body {
     height: 208px;
   }
 
-  .additional-text {
+  .about-company__text--hidden {
     display: block;
     height: 40px;
     overflow: hidden;
@@ -358,11 +360,11 @@ body {
     gap: 40px;
   }
 
-  .info-about-company__text {
+  .about-company__text {
     display: block;
   }
 
-  .additional-text {
+  .about-company__text--hidden {
     display: block;
     overflow: visible;
     font-size: 14px;
