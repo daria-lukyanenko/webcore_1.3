@@ -99,6 +99,12 @@ body {
   cursor: pointer;
 }
 
+.button:hover {
+  color: var(--menu);
+  filter: brightness(1.2);
+  opacity: 0.7;
+}
+
 .button__devider {
   position: relative;
   padding-right: 10pх;
@@ -215,6 +221,11 @@ body {
   margin-left: 20px;
   transition: transform 0.3s ease;
 }
+.button__icon:hover {
+  color: var(--highlight);
+  filter: brightness(1.2);
+  opacity: 0.7;
+}
 
 .button__text {
   font-size: 16px;
@@ -222,6 +233,10 @@ body {
   letter-spacing: -0.2px;
   color: var(--text);
   padding-left: 10px;
+}
+
+.button__text:hover {
+  font-weight: bold;
 }
 
 .about-company__img {
