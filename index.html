@@ -9,13 +9,14 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
+      <header class="topbar">
         <button class="button devider">
           <img src="images/burger.svg" alt="Иконка 'Меню'" />
         </button>
-        <img src="images/logo.svg" alt="Логотип 'CPS'" />
+        <a><img src="images/logo.svg" alt="Логотип 'CPS'" /></a>
         <ul class="tablet-menu-list">
           <li>
+            ы
             <button class="button">
               <img src="images/call.svg" alt="Иконка 'Телефонная трубка'" />
             </button>
@@ -33,7 +34,7 @@
         </ul>
         <ul class="menu-list">
           <li>
-            <button class="button button__devider">
+            <button class="button button-devider">
               <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
             </button>
           </li>
@@ -48,19 +49,19 @@
         </ul>
       </header>
       <main>
-        <nav class="page-nav">
-          <div class="about-services">
+        <section class="about-services">
+          <div class="about-services__info">
             <h1 class="title">Услуги и сервисы</h1>
             <ul class="desktop-icon-list">
               <li class="desktop-icon-list__item">
                 <button class="button">
-                  <p class="button__text">Оставить заявку</p>
+                  <span class="button__text">Оставить заявку</span>
                   <img src="images/repair.svg" alt="Иконка 'Ремонт'" />
                 </button>
               </li>
               <li class="desktop-icon-list__item">
                 <button class="button">
-                  <p class="button__text">Статус ремонта</p>
+                  <span class="button__text">Статус ремонта</span>
                   <img
                     src="images/checkstatus.svg"
                     alt="Иконка 'Просмотр статуса'"
@@ -69,33 +70,37 @@
               </li>
             </ul>
           </div>
-          <ul class="services-list">
-            <li>
-              <a href="" class="services-list__link services-list__link--active"
-                >Ремонтируемые бренды</a
-              >
-            </li>
-            <li>
-              <a href="" class="services-list__link"
-                >Ремонтируемые устройства</a
-              >
-            </li>
-            <li>
-              <a href="" class="services-list__link">Дополнительные услуги</a>
-            </li>
-            <li>
-              <a href="" class="services-list__link">Цены на услуги</a>
-            </li>
-            <li>
-              <a href="" class="services-list__link"
-                >Адреса сервисных центров</a
-              >
-            </li>
-            <li>
-              <a href="" class="services-list__link">Отзывы</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="page-nav">
+            <ul class="services-list">
+              <li>
+                <a
+                  href=""
+                  class="services-list__link services-list__link--active"
+                  >Ремонтируемые бренды</a
+                >
+              </li>
+              <li>
+                <a href="" class="services-list__link"
+                  >Ремонтируемые устройства</a
+                >
+              </li>
+              <li>
+                <a href="" class="services-list__link">Дополнительные услуги</a>
+              </li>
+              <li>
+                <a href="" class="services-list__link">Цены на услуги</a>
+              </li>
+              <li>
+                <a href="" class="services-list__link"
+                  >Адреса сервисных центров</a
+                >
+              </li>
+              <li>
+                <a href="" class="services-list__link">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
         <section class="about-company">
           <div class="about-company__info">
             <p class="about-company__text">

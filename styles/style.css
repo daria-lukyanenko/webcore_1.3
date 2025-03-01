@@ -65,7 +65,7 @@ body {
   margin: 0 auto;
 }
 
-.header {
+.topbar {
   border-bottom: 1px solid var(--border);
   background-color: #ffffff;
   padding: 16px;
@@ -97,6 +97,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+  transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
 .button:hover {
@@ -105,12 +106,12 @@ body {
   opacity: 0.7;
 }
 
-.button__devider {
+.button-devider {
   position: relative;
   padding-right: 10pх;
 }
 
-.button__devider::before {
+.button-devider::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -121,9 +122,14 @@ body {
   width: 2px;
   border-radius: 6px;
   background-color: var(--devider);
+  transition: background-color 0.3s;
 }
 
-.about-services {
+.button-devider:hover::before {
+  background-color: var(--menu);
+}
+
+.about-services__info {
   display: flex;
   align-items: center;
 }
@@ -270,6 +276,10 @@ body {
     width: 2px;
     border-radius: 6px;
     background-color: var(--devider);
+    transition: background-color 0.3s;
+  }
+  .devider:hover::after {
+    background-color: var(--menu);
   }
 
   .tablet-menu-list {
@@ -281,12 +291,12 @@ body {
     margin-left: auto;
   }
 
-  .button__devider {
+  .button-devider {
     position: relative;
     padding-right: 10pх;
   }
 
-  .button__devider::before {
+  .button-devider::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -323,7 +333,7 @@ body {
 }
 
 @media (min-width: 1366px) {
-  .header {
+  .topbar {
     display: none;
   }
 
